@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position: static, relative, absolute, fixed, sticked */
+        /* Các thuộc quy định vị trí của block position: top, left, bottom, right, z-index */
+        .container {
+            width: 100%;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .block {
+            height: 50px;
+            width: 100%;
+        }
+
+        .block-1 {
+            background-color: rgb(5, 130, 247);
+            /* position: relative; */
+            /* Giữ nguyên dịnh dạng ở vị trí ban đầu và Khi dịch chuyển thì position relative sẽ dịch chuyển so với vị trí ban đầu */
+            /* top: 160px; */
+            /* left: 20px; */
+            /* position: static; */
+            /* static là giá trị mặc định của position */
+        }
+
+        .block-2 {
+            background-color: rgb(5, 247, 126);
+            position: absolute;
+            /* Khi sử dụng position absolute thì nó sẽ xóa thẻ khỏi luồng HTML */
+            bottom: 0;
+        }
+
+        .block-3 {
+            background-color: rgb(247, 231, 5);
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block-1 block">A</div>
+        <div class="block-2 block">B</div>
+        <div class="block-3 block">C</div>
+    </div>
+</body>
+</html>

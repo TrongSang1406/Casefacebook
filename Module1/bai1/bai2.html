@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1 solid pink;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <table border="1" style="width: 30%;">
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Giới tính</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Quang Thọ</td>
+            <td>Nam</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Quang Lý</td>
+            <td>Nam</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Quang Lê</td>
+            <td>Nam</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Quang Dũng</td>
+            <td>Nam</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" style="width: 30%;">
+        <tr>
+            <th colspan="3">Danh sách ca sỹ</th>
+        </tr>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Trọng Sang</td>
+            <td>vitrongsang@gmail.com</td>
+        </tr>
+        <tr>
+            <td>trongsang1406@gmail.com</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" style="width: 30%;">
+        <tr>
+            <th>ID</th>
+            <th>Họ và tên</th>
+            <th>Điểm</th>
+            <th>Xếp loại</th>
+        </tr>
+        <tr>
+            <td colspan="4">Khóa A</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trần Tiến Tài</td>
+            <td>7</td>
+            <td rowspan="2">Khá</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Phạm Mạnh Khoa</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td colspan="4">Khóa B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Trần Văn Hưng</td>
+            <td>5</td>
+            <td>Trung Bình</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Đỗ Đức Thành</td>
+            <td>10</td>
+            <td>Giỏi</td>
+        </tr>
+        <tr>
+            <th colspan="2">TỔNG CỘNG</th>
+            <th>7.5</th>
+            <th>Khá</th>
+        </tr>
+
+    </table>
+    <br>
+    <form action="">
+        <h1>Market Research Survey</h1>
+        <h4>Please take a few moments to complete this satisfaction survey</h4>
+        <h4><b>What is your age range?</b></h4>
+        <input type="number" placeholder="18 - 24">
+        <h4><b>What is your yearly income range?</b></h4>
+        <input type="number" placeholder="$0 - $25.000">
+        <h4><b>Gender</b></h4>
+        <input type="radio" name="text">Male
+        <br>
+        <input type="radio" name="text">Female
+        <h4><b>Which of the following products have your purchased in the last 2 mounths. Please check all that
+                apply.</b></h4>
+        <input type="checkbox">Product 1
+        <br>
+        <input type="checkbox">Product 2
+        <br>
+        <input type="checkbox">Product 3
+        <h4><b>How often, would you use our new product?</b></h4>
+        <input type="radio" name="text">Daily
+        <br>
+        <input type="radio" name="text">Weekly
+        <br>
+        <input type="radio" name="text">Monthly
+        <h4><b>What would you pay for the new product?</b></h4>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" style="width: 100px;"> .</td>
+                <td><input type="text" style="width: 20px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <h4><b>What features would you liketo see in the new product?</b></h4>
+        <textarea style="height: 100px; width: 600px;"></textarea>
+        <h4><b>Please rate your level of agreement wiht the following statements</b></h4>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <th>Our product are priced fairly.</td>
+                <td><input type="radio" name="price">1</td>
+                <td><input type="radio" name="price">2</td>
+                <td><input type="radio" name="price">3</td>
+                <td><input type="radio" name="price">4</td>
+            </tr>
+            <tr>
+                <th>Our product are high quality.</td>
+                    <td><input type="radio" name="number">1</td>
+                    <td><input type="radio" name="number">2</td>
+                    <td><input type="radio" name="number">3</td>
+                    <td><input type="radio" name="number">4</td>
+            </tr>
+            <tr>
+                <th>You would recommend our product to a friend or coworker</td>
+                    <td><input type="radio" name="text">1</td>
+                    <td><input type="radio" name="text">2</td>
+                    <td><input type="radio" name="text">3</td>
+                    <td><input type="radio" name="text">4</td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br>
+    <table>
+        <tr>
+            <td style="background-color: orangered; color: aliceblue;" colspan="4">  <center>SỞ THÍCH CỦA BẠN</center></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">Họ và tên </td>
+            <td colspan="3"> <input type="text" placeholder="yourname"></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">Email</td>
+            <td colspan="3"><input type="email" placeholder="email"></td>
+        </tr>
+        <tr>
+            <td style="color: blue;" rowspan="3">Sở thích</td>
+            <td style="color: orangered;"><input type="checkbox"> Thể thao</td>
+            <td style="color: orangered;"><input type="checkbox">  Âm nhạc</td>
+            <td style="color: orangered;"><input type="checkbox"> Đọc sách</td>
+        </tr>
+        <tr>
+            <td style="color: orangered;"><input type="checkbox"> Lướt web</td>
+            <td style="color: orangered;"><input type="checkbox"> Chơi game</td>
+            <td style="color: orangered;"><input type="checkbox"> Điện ảnh</td>
+        </tr>
+        <tr>
+            <td style="color: orangered;"><input type="checkbox"> Du lịch</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Gửi thông tin"></td>
+            <td><input type="reset" value="Nhập lại"></td>
+        </tr>
+
+
+    </table>
+
+    
+</body>
+
+</html>

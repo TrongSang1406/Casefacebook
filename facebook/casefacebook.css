@@ -1,0 +1,1001 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    display: inline;
+}
+
+
+.nav-bar {
+    height: 55px;
+    width: 100%;
+    box-shadow: 0 0 3px;
+    background-color: rgb(250, 251, 252);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-bar .item1 {
+    width: 450px;
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 14%;
+    height: 100%;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: blue;
+}
+
+.logo button {
+    border: none;
+    background: none;
+    color: blue;
+}
+
+.search {
+    width: 86%;
+    height: 100%;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(234, 239, 241);
+    padding-left: 10px;
+}
+
+
+.nav-bar .item2 {
+    width: 587px;
+    height: 100%;
+    margin: 0 1px;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 110px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(89, 91, 91);
+    font-size: 22px
+}
+.iconhome {
+    width: 110px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(89, 91, 91);
+    font-size: 22px
+}
+.icon:hover {
+    property: value;
+    background-color: rgb(234, 238, 238);
+}
+.iconhome:hover {
+    property: value;
+    background-color: rgb(234, 238, 238);
+}
+.nav-bar .item2 .iconhome:first-child {
+    color: rgb(56, 56, 252);
+    border-bottom: 3px solid rgb(56, 56, 252);
+    border-radius: 0px;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+
+.item3 {
+    display: flex;
+    width: 450px;
+    height: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    background-color: rgb(227, 229, 229);
+    border-radius: 100%;
+    color: rgb(89, 91, 91);
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon:hover {
+    property: value;
+    background-color: rgb(199, 202, 202);
+}
+
+.home-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.cha {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cha .top-top {
+    position: relative;
+}
+
+.top-top .side-bar-left {
+    width: 355px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 55px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    padding-left: 5px;
+}
+
+.side-bar-left .top {
+    width: 350px;
+    height: 49%;
+    padding-top: 15px;
+    padding-left: 5px;
+
+    button {
+        width: 95%;
+        height: 48px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    i {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+
+    .iconbutton {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(50, 85, 174);
+    }
+
+    .buttonname {
+        width: 85%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    .A {
+        color: rgb(63, 192, 215);
+    }
+
+    .B {
+        color: rgb(74, 74, 200);
+        padding-left: 3px;
+    }
+
+    .C {
+        color: rgb(184, 69, 168);
+        padding-left: 7px;
+    }
+
+    .D {
+        color: rgb(5, 126, 255);
+        padding-right: 2px;
+    }
+
+    .F {
+        color: black;
+
+        i {
+            background-color: rgb(236, 237, 237);
+            font-size: 20px;
+            padding-left: 9px;
+            padding-top: 3px;
+        }
+    }
+}
+
+.side-bar-left .bottom {
+    width: 350px;
+    height: 48%;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        width: 95%;
+        height: 48px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        border: none;
+        font-size: 15px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+
+    .iconbutton2 {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 3px;
+    }
+
+    .banquyen {
+        width: 95%;
+        height: 120px;
+        padding-top: 10px;
+        margin-left: 10px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .F {
+        background-color: rgb(236, 237, 237);
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding-left: 8px;
+        padding-top: 3px;
+        margin-left: 3px;
+
+    }
+
+    .buttonname2 {
+        width: 85%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .shortcut {
+        width: 100%;
+        height: 48px;
+        margin-left: 13px;
+        color: rgb(71, 70, 70);
+        font-size: 15px;
+        padding-top: 15px;
+        border-top: 1px solid rgb(188, 187, 187);
+    }
+
+    .img {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.side-bar-left:hover {
+    -ms-overflow-style: initial;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.cha .content {
+    width: 690px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 600px;
+    top: 70px;
+    z-index: 1;
+}
+
+.content .story {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+}
+
+.story-item {
+    width: 140px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 0 2px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ten {
+        font-size: 13px;
+        color: white;
+        display: flex;
+        position: absolute;
+        top: 222px;
+        left: 8px;
+    }
+}
+
+.story .avatar {
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.avatar .taotin {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.avatar .nuttaotin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    color: aliceblue;
+    position: absolute;
+    top: 180px;
+    left: 52px;
+    padding-top: 3px;
+    border: 4px solid rgb(253, 249, 249);
+}
+
+.story-item:hover {
+    property: value;
+    background-color: rgb(209, 212, 212);
+
+    img {
+        width: 101%;
+    }
+}
+
+.xemthem {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 15px;
+    top: 100px;
+    background-color: rgb(240, 241, 241);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.xemthem:hover {
+    property: value;
+    background-color: rgb(209, 210, 211);
+}
+
+
+.content .think {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.think-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 2px;
+}
+
+.think-item .nghigi {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.avt {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.input-think {
+    width: 91%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    button {
+        width: 510px;
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-left: 5px;
+        border: none;
+        background-color: rgb(234, 239, 241);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: rgb(68, 68, 67);
+    }
+}
+
+.input-think button:hover {
+    property: value;
+    background-color: rgb(217, 219, 219);
+    ;
+}
+
+.think-item .icon-bottom {
+    width: 94%;
+    height: 50%;
+    border-top: 1px solid rgb(210, 209, 209);
+    padding-top: 5px;
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-bottom .live {
+    width: 33%;
+    height: 90%;
+    border-radius: 10px;
+
+    i {
+        font-size: 22px;
+        color: brown;
+    }
+}
+
+.icon-bottom .video {
+    width: 33%;
+    height: 90%;
+    border-radius: 10px;
+
+    i {
+        font-size: 22px;
+        color: rgb(13, 179, 82);
+    }
+}
+
+.icon-bottom .feeling {
+    width: 33%;
+    height: 90%;
+
+    i {
+        font-size: 22px;
+        color: rgb(232, 205, 86);
+    }
+}
+
+.icon-bottom button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.icon-bottom button:hover {
+    property: value;
+    background-color: rgb(234, 238, 238);
+}
+
+.content-item {
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+}
+
+.content-item .tieude {
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    display: flex;
+}
+
+.tieude .bt-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.bt-left .avt-client {
+    width: 20%;
+    height: 100%;
+
+    button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.bt-left .client {
+    width: 80%;
+    height: 100%;
+}
+
+.client .btname {
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+    button {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        display: flex;
+        align-items: end;
+    }
+
+    button:hover {
+        property: value;
+        text-decoration: underline;
+    }
+}
+
+.client .time {
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    color: rgb(67, 69, 68);
+}
+
+
+.tieude .bt-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.bt-right .itembt {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    button {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: rgb(98, 97, 97);
+    }
+
+    button:hover {
+        background-color: rgb(227, 226, 226);
+    }
+}
+
+
+.content-item .noidungchu {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.content-item .noidunganh {
+    width: 100%;
+    min-height: 350px;
+    margin-top: 5px;
+}
+
+.noidunganh img {
+    width: 100%;
+    height: min-content;
+}
+
+.content-item .like-cmt {
+    width: 100%;
+    min-height: auto;
+    padding: 0 15px;
+}
+
+.like-cmt .tren {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    border-bottom: 1px solid rgb(158, 157, 157);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tren .luotthich {
+    width: 60px;
+    height: 20px;
+    display: flex;
+
+    button {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        width: 19px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+    }
+
+    .like {
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        border-radius: 50%;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+    .haha {
+        font-size: 20px;
+        border-radius: 50%;
+    }
+}
+
+.like-cmt .duoi {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duoi .item {
+    width: 187px;
+    height: 34px;
+    display: flex;
+
+    button {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(226, 226, 226);
+    }
+}
+
+
+.cha .side-bar-right {
+    width: 355px;
+    height: 700px;
+    padding-top: 15px;
+    position: fixed;
+    right: 0;
+    top: 55px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.side-bar-right .trangcanhan {
+    width: 345px;
+    height: 40px;
+    border-bottom: 1px solid rgb(73, 72, 72);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    color: rgb(103, 101, 101);
+    margin-left: 5px;
+}
+
+.trangcanhan .more {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+}
+
+.side-bar-right .sinhnhat {
+    width: 350px;
+    height: 100px;
+    padding: 0 5px;
+}
+
+.sinhnhat .tieudesinhnhat {
+    width: 100%;
+    height: 50px;
+    color: rgb(103, 101, 101);
+    display: flex;
+    align-items: center;
+}
+
+.sinhnhat .noidungsinhnhat {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 15px;
+
+    button {
+        width: 100%;
+        height: 100%;
+        padding-left: 5px;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(255, 255, 255);
+    }
+
+    i {
+        font-size: 25px;
+        color: rgb(39, 123, 240)
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+}
+
+.side-bar-right .lienhe {
+    width: 350px;
+    height: 450px;
+}
+
+.lienhe .tieude {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tieude .noidungtieude {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: end;
+    color: rgb(103, 101, 101);
+    padding-left: 5px;
+}
+
+.tieude .congcucaidat {
+    width: 23%;
+    height: 100%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+}
+
+.lienhe .clients {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        width: 100%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 50%;
+        border: none;
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+}
+
+.side-bar-right .nhom {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        width: 100%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 50%;
+        border: none;
+    }
+
+    button:hover {
+        property: value;
+        background-color: rgb(210, 212, 213);
+    }
+}
+
+.nhom .tieudenhom {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(119, 119, 119);
+    padding-left: 5px;
+}
+
+.side-bar-right:hover {
+    -ms-overflow-style: initial;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
